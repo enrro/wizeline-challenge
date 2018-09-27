@@ -2,15 +2,13 @@
   <div>
 
     <div class="container">
-      <h1>My movies backlog</h1>
-      <h2> Hello {{ message }}</h2>
+      <center><h1>Entrenadores</h1></center>
     </div>
 
     <movie-nav/>
 
     <div class="container">
 
-      <movie-filter v-if="isDiscover"/>
 
       <div :class="movieContainerClasses" class="row movie-container">
 
@@ -27,13 +25,11 @@
 <script>
 import MovieCard from './MovieCard'
 import MovieNav from './MovieNav'
-import MovieFilter from './MovieFilter'
 
 export default {
   components: {
     MovieCard,
-    MovieNav,
-    MovieFilter
+    MovieNav
   },
   computed: {
     message(){

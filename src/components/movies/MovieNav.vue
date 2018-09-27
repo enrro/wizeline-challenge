@@ -3,14 +3,14 @@
     <li class="nav-item">
       <a :class="{'nav-link':true, 'active': section==='discover'}"
         href="#" @click.prevent="clicked('discover')">
-        Discover
+        Entrenadores
       </a>
     </li>
 
     <li class="nav-item">
       <a :class="{'nav-link':true, 'active': section==='backlog'}"
         href="#" @click.prevent="clicked('backlog')">
-        Backlog
+        Contratados
       </a>
     </li>
   </ul>
