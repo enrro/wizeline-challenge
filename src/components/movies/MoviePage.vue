@@ -26,8 +26,9 @@ export default {
   data () {
     return {
       entrenadores: [
-        {title: "Edgar", description: "Especialista en Caniches"},
-        {title: "Julio", description: "Especialista en Pitbull"}
+        {title: "Edgar", description: "Especialista en Caniches", image: require('../../assets/Black.png')},
+        {title: "Julio", description: "Especialista en Pitbull", image: require('../../assets/Red_(game).png')},
+        {title: "Dom", description: "Especialista en Schnauzer", image: require('../../assets/entrenador.png')}
       ]
     }
   },

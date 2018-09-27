@@ -1,7 +1,7 @@
 <template>
   
   <div class="card club-card" >
-    <img class="card-img-top" src="./entrenador.png" alt="Card image cap">
+    <img class="card-img-top" :src="image" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
       <h3 class="card-text">{{ description }}</h3>
@@ -27,12 +27,14 @@ export default {
 
   props: {
     title: {
-      type: String,
-      default: 'Some Title'
+      type: String
     },
     description: {
+      type: String
+    },
+    image: {
       type: String,
-      default: 'Some description'
+      default: "./entrenador.png"
     }
   },
 
