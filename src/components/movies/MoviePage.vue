@@ -5,15 +5,12 @@
       <center><h1>Entrenadores</h1></center>
     </div>
 
-    <movie-nav/>
-
     <div class="container">
 
 
       <div :class="movieContainerClasses" class="row movie-container">
-
-        <div v-for="(movie, index) in movies" :key = "index" class="col-xs-12 col-sm-6 col-lg-3">
-          <movie-card v-bind="movie"/>
+        <div v-for="(trainer, index) in entrenadores" :key = "index" class="col-xs-12 col-sm-6 col-lg-3">
+          <movie-card v-bind="trainer"/>
         </div>
 
       </div>
@@ -24,12 +21,18 @@
 
 <script>
 import MovieCard from './MovieCard'
-import MovieNav from './MovieNav'
 
 export default {
+  data () {
+    return {
+      entrenadores: [
+        {title: "Edgar", description: "Especialista en Caniches"},
+        {title: "Julio", description: "Especialista en Pitbull"}
+      ]
+    }
+  },
   components: {
-    MovieCard,
-    MovieNav
+    MovieCard
   },
   computed: {
     message(){

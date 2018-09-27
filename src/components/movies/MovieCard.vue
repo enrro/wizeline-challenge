@@ -3,9 +3,10 @@
   <div class="card club-card" >
     <img class="card-img-top" src="./entrenador.png" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">{{ title }}</h5>
+      <h3 class="card-text">{{ description }}</h3>
+      <br>
+      <a href="#" class="btn btn-primary">Más información</a>
     </div>
   </div>
 </template>
@@ -25,14 +26,6 @@ export default {
   },
 
   props: {
-    id: {
-      type: Number,
-      required: true
-    },
-    image: {
-      type: String,
-      default: 'http://lorempixel.com/370/556'
-    },
     title: {
       type: String,
       default: 'Some Title'
@@ -40,10 +33,6 @@ export default {
     description: {
       type: String,
       default: 'Some description'
-    },
-    voteAverage: {
-      type: Number,
-      default: -1
     }
   },
 
@@ -121,7 +110,7 @@ export default {
   overflow: hidden;
 }
 .card-text {
-  font-size: 14px;
+  font-size: 18px;
 }
 .save-btn {
   float: right;
