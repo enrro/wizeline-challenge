@@ -1,29 +1,11 @@
 <template>
-  <div class="movie-card">
-    <img class="card-img-top"
-      @error="imageError = true"
-      :src="workingImage">
-
-    <img v-if="saved"
-      class="movie-card-saved-icon" src="../../assets/star.png">
-
-    <div class="movie-card-body">
-      <div class="text-container">
-        <h4 class="card-title">{{title}}</h4>
-        <p class="card-text">{{description}}</p>
-      </div>
-
-      <movie-card-vote-average :voteAverage="voteAverage"/>
-
-      <a v-if="!saved" href="#" @click.prevent="saveMovie(movieObject)"
-        class="btn btn-primary save-btn">
-        Add to backlog
-      </a>
-      <a v-else href="#" @click.prevent="removeSavedMovie(movieObject)"
-        class="btn btn-danger save-btn">
-        Remove
-      </a>
-
+  
+  <div class="card club-card" >
+    <img class="card-img-top" src="./entrenador.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
 </template>
@@ -106,6 +88,11 @@ export default {
   color: white;
   position: relative;
   overflow: hidden;
+}
+.club-card{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 5px;
 }
 .movie-card-saved-icon {
   width: 30px;
