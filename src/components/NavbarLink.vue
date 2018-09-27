@@ -1,9 +1,9 @@
 <template>
-  <li :class="{'nav-item': true, 'active': false}">
+<router-link tag="li" :to="to" active-class="active" class="nav-item" href="#" exact>
     <a class="nav-link" :href="to">
       {{label}}
     </a>
-  </li>
+</router-link>
 </template>
 
 <script>
