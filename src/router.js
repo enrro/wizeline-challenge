@@ -11,11 +11,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'todo-page',
-      component: TodoPage
-    }, 
-    {
-      path: '/movies',
       name: 'movie-page',
       component: MoviePage
     }
