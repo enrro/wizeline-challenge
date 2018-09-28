@@ -4,6 +4,7 @@ import MoviePage from './components/movies/MoviePage.vue'
 import InfoTrainer from './components/movies/InfoTrainer.vue'
 import InfoTrainerJulio from './components/movies/InfoTrainerJulio.vue'
 import InfoTrainerDom from './components/movies/InfoTrainerDom.vue'
+import InfoTrainerPaquito from './components/movies/InfoTrainerPaquito.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/infoEntrenadorDom',
       name: 'info-entrenador-dom',
       component: InfoTrainerDom
+    },
+    {
+      path: '/infoEntrenadorPaquito',
+      name: 'info-entrenador-paquito',
+      component: InfoTrainerPaquito
     }
   ]
 })

@@ -28,7 +28,8 @@ export default {
       entrenadores: [
         {title: "Edgar", description: "Especialista en Caniches", image: require('../../assets/Black.png'), url: '/InfoEntrenadorEdgar'},
         {title: "Julio", description: "Especialista en Pitbull", image: require('../../assets/Red_(game).png'), url: '/InfoEntrenadorJulio'},
-        {title: "Dom", description: "Especialista en Schnauzer", image: require('../../assets/entrenador.png'), url: '/InfoEntrenadorDom'}
+        {title: "Dom", description: "Especialista en Schnauzer", image: require('../../assets/entrenador.png'), url: '/InfoEntrenadorDom'},
+        {title: "Paquito", description: "Especialista en Labradores", image: require('../../assets/trainer.jpg'), url: '/InfoEntrenadorPaquito'}
       ]
     }
   },
