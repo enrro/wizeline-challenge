@@ -6,19 +6,14 @@
       <h5 class="card-title" style="font-family: Arial Black">{{ title }}</h5>
       <h3 class="card-text">{{ description }}</h3>
       <br>
-      <a href="#" class="btn btn-primary">Más información</a>
+      <a href="/InfoEntrenador" class="btn btn-primary">Más información</a>
     </div>
   </div>
 </template>
 
 <script>
-import MovieCardVoteAverage from './MovieCardVoteAverage'
 
 export default {
-  components: {
-    MovieCardVoteAverage
-  },
-
   data () {
     return {
       imageError: false
