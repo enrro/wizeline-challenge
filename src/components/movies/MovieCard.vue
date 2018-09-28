@@ -6,7 +6,7 @@
       <h5 class="card-title" style="font-family: Arial Black">{{ title }}</h5>
       <h3 class="card-text">{{ description }}</h3>
       <br>
-      <a href="/InfoEntrenador" class="btn btn-primary">Más información</a>
+      <a :href="url" class="btn btn-primary">Más información</a>
     </div>
   </div>
 </template>
@@ -30,6 +30,9 @@ export default {
     image: {
       type: String,
       default: "./entrenador.png"
+    },
+    url:{
+      type: String
     }
   },
 
