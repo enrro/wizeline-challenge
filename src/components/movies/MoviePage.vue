@@ -1,11 +1,11 @@
 <template>
   <div>
-
+    <center><img src="../../assets/logo.png" height="100" width="100"></center>
     <div class="container">
-      <center><h1>Entrenadores</h1></center>
+      <h1 style="color: #ffffff; font-family: Arial Black"><center>Entrenadores</center></h1>
     </div>
 
-    <div class="container">
+    <div class="container circular" :style="{ backgroundImage: 'url(/../../../assets/wallpaper.jpg)' }">
 
 
       <div :class="movieContainerClasses" class="row movie-container">

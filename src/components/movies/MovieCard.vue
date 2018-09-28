@@ -3,7 +3,7 @@
   <div class="card club-card" >
     <img class="card-img-top" :src="image" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{ title }}</h5>
+      <h5 class="card-title" style="font-family: Arial Black">{{ title }}</h5>
       <h3 class="card-text">{{ description }}</h3>
       <br>
       <a href="#" class="btn btn-primary">Más información</a>
